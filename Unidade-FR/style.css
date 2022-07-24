@@ -1,0 +1,18 @@
+.container {
+  display: grid;
+  /* 
+  
+  FR representa fração do espaço disponível do grig, isso faz com que o grip seja flexível a diversos tamanhos de tela, tbm podemos definir o tamanho do container para ele se ajustar ao tamanho do container 
+  
+  */
+
+  grid-template-columns: 1fr 2fr 1fr; /* Neste caso a 2º coluna terá o dobro do tamanho das outras colunas */
+  gap: 10px 30px;
+}
+.item {
+  background-color: #0000FF;
+  border-radius: 10px;
+  padding: 20px;
+  color: #FFF;
+  font-size: 20px;
+}
