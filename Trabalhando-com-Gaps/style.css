@@ -1,0 +1,21 @@
+.container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  /* 
+  grid-column-gap: 10px;  espaçamento entre as colunas
+  grid-row-gap: 10px; espaçamento entre as linhas
+  Não é mais utilizado desta forma, somente column-gap: 10px e row-gap: 10px;;
+  */
+  /*
+  grid-gap: 10px 20px;  espaçamento diferentes entre linhas e colunas, a 1º representa a linha e a 2º a coluna ou podemos definir apenas um valor grid-gap: 10px; assim tanto a linha como a coluna ficará com o mesmo espaçamento 
+  Tbm Não é mais utilizado desta forma somente gap: 10px;
+  */
+  gap: 10px 30px;
+}
+.item {
+  background-color: #0000FF;
+  border-radius: 10px;
+  padding: 20px;
+  color: #FFF;
+  font-size: 20px;
+}
