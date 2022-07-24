@@ -1,0 +1,15 @@
+.container {
+  display: grid;
+  /* grid-template-columns definimos a quantidade de colunas que terá o objeto e sua largura*/
+  grid-template-columns: 200px 200px 200px;
+  /* grid-template-rows definimos a sua altura*/
+  grid-template-rows: 200px 100px 200px 10px;
+  gap: 10px 30px;
+}
+.item {
+  background-color: #0000FF;
+  border-radius: 10px;
+  padding: 20px;
+  color: #FFF;
+  font-size: 20px;
+}
