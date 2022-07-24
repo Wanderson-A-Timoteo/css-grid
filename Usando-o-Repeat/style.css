@@ -1,0 +1,18 @@
+.container {
+  display: grid;
+  /* 
+  Em Repeat() definimos no 1º parâmetro a quantidade de repetição e no 2º parâmetro o que desejamos repetir.  
+  */
+
+  grid-template-columns: repeat(3, 200px); /* Neste caso foi definodo para repetir 3 vezes o tamanho de 200px. Seria o mesmo que fazer o exemplo a seguir: 
+  grid-template-columns: repeat(200px 200px 200px);
+  */
+  gap: 10px 30px;
+}
+.item {
+  background-color: #0000FF;
+  border-radius: 10px;
+  padding: 20px;
+  color: #FFF;
+  font-size: 20px;
+}
