@@ -1,0 +1,13 @@
+.container {
+  display: grid;
+  /* auto-fill significa basicamente para repetir até o tamanho final da grid com 300px. */
+  grid-template-columns: repeat(auto-fill, 200px); 
+  gap: 10px 30px;
+}
+.item {
+  background-color: #0000FF;
+  border-radius: 10px;
+  padding: 20px;
+  color: #FFF;
+  font-size: 20px;
+}
