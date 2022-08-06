@@ -1,0 +1,12 @@
+.container {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(200px, 300px)); /*Podemos aplicar o minmax em outras propriedades*/
+  gap: 10px;
+}
+.item {
+  background-color: #0000FF;
+  border-radius: 10px;
+  padding: 20px;
+  color: #FFF;
+  font-size: 20px;
+}
