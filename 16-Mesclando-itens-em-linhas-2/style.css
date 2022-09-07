@@ -1,0 +1,43 @@
+.container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); 
+    grid-gap: 10px;
+    background-color: #CCC;
+  }
+  .item {
+    background-color: #0000FF;
+    border-radius: 10px;
+    padding: 20px;
+    color: #FFF;
+    font-size: 20px;
+  }
+
+/* 
+
+COLUNAS = Linhas imaginárias da esquerda para a direita
+LINHAS  = Linhas imaginárias de cima para baixo
+
+*/
+
+/* Como posicionar a coluna 7 no final das colunas pegando todas as linhas? */
+
+.item7 {
+  background-color: #00FF00;
+  color: #000;
+
+  grid-column-start: 3;
+  grid-column-end: 4;
+
+  grid-row-start: 1;
+  grid-row-end: 5;
+}
+
+.item5 {
+  background-color: #FF0000;
+
+  grid-column-start: 1;
+  grid-column-end: 3;
+
+  grid-row-start: 4;
+  grid-row-end: 5;
+}
