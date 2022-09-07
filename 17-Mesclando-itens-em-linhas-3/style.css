@@ -1,0 +1,29 @@
+.container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); 
+    grid-gap: 10px;
+    background-color: #CCC;
+  }
+  .item {
+    background-color: #0000FF;
+    border-radius: 10px;
+    padding: 20px;
+    color: #FFF;
+    font-size: 20px;
+  }
+
+/* 
+
+COLUNAS = Linhas imaginárias da esquerda para a direita
+LINHAS  = Linhas imaginárias de cima para baixo
+
+*/
+
+.item1 {
+  grid-column: 1 / 3;
+  grid-row: 1 / 4;
+}
+
+.item11{
+  grid-column: 1 / span 3;
+}
