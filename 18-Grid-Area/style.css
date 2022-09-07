@@ -1,0 +1,39 @@
+.container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); 
+    grid-gap: 10px;
+    background-color: #CCC;
+  }
+  .item {
+    background-color: #0000FF;
+    border-radius: 10px;
+    padding: 20px;
+    color: #FFF;
+    font-size: 20px;
+  }
+
+/* O Grid area precisamos definir 4 valore na seguinte ordem:
+1. grid-row-start
+2. grid-column-start
+3. grid-row-end
+4.grid-column-end
+
+*/
+
+.item1 {
+  grid-area: 1 / 1 / span 2 / span 2;
+}
+
+/* Faz o mesmo que o item1 porém com sintaxe diferente */ 
+.item4 {
+  grid-area: 3 / 1 / 5 / 3;
+}
+
+.item8 {
+  grid-area: 5 / 2 / 7 / 4;
+}
+
+.item10 {
+  grid-row: 7;
+  grid-column: 1 / 3;
+}
