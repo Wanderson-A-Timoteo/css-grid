@@ -1,0 +1,47 @@
+.container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); 
+    grid-gap: 10px;
+    background-color: #CCC;
+  }
+  .item {
+    background-color: #0000FF;
+    border-radius: 10px;
+    padding: 20px;
+    color: #FFF;
+    font-size: 20px;
+  }
+
+/* 
+
+COLUNAS = Linhas imaginárias da esquerda para a direita
+LINHAS  = Linhas imaginárias de cima para baixo
+
+*/
+
+
+/* Definindo as colunas que o item1 ocupará na tela */
+  .item1 {
+    grid-column-start: 1; /* Define o começo da coluna na linha 1 da coluna, ou seja, começando a esquerda da tela */
+    grid-column-end: 4;   /* Define o final da coluna na linha 4 da coluna */
+  }
+
+/* Definindo as linhas que o item3 ocupará na tela, porém quando trabalhamos com linhas precisamos corrigir a posição da coluna que ele estava */
+  .item3 {
+    /* Corige para a coluna que estava */
+    grid-column-start: 2;
+    grid-column-end: 4;
+
+    /* Define quantas linhas ocupará */
+    grid-row-start: 2; /* Define o começo na linha 2 de cima para baixo */
+    
+    grid-row-end: 5;  /* Define o final na linha 4 de cima para baixo */
+  }
+
+  .item8 {
+    grid-column-start: 3;
+    grid-column-end: 4;
+
+    grid-row-start: 5;
+    grid-row-end: 7;
+  }
